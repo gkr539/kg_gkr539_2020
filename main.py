@@ -12,7 +12,7 @@ so if length of s1 is less than s2 then return false.
 '''
 
 def check_mapping(s1,s2):
-    if len(s1) != len(s2):
+    if len(s1) < len(s2):
         return False
     used = set()
     for char in s1:
